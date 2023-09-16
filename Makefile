@@ -3,13 +3,13 @@ LDFLAGS = -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
 
 
 
-HelloTriangle: main.cpp
-	g++ $(CFLAGS) -o HelloTriangle main.cpp $(LDFLAGS)
+VulkanLearning: main.cpp
+	g++ $(CFLAGS) -o VulkanLearning main.cpp $(LDFLAGS)
 
 .PHONY: test clean
 
-test: HelloTriangle
-	./HelloTriangle
+test: VulkanLearning
+	./VulkanLearning
 
 clean:
-	rm -f HelloTriangle
+	rm -f VulkanLearning
